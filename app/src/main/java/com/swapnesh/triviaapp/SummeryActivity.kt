@@ -41,7 +41,7 @@ class SummeryActivity : AppCompatActivity() {
         val outputnew = output.replace("]", "")
         Log.e("", "outputnew--------" + outputnew)
         answertwo.text = outputnew
-    
+
 
         datestring=  SimpleDateFormat("dd").format(cal.time)+"-"+ SimpleDateFormat("MM").format(cal.time)+"-"+yearccurrent
 

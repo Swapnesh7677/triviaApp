@@ -21,13 +21,17 @@ class QuestiononeActivity : AppCompatActivity() {
 
 
         next_button.setOnClickListener {
-            val intSelectButton: Int = radiogroup!!.checkedRadioButtonId
-            radioButton = findViewById(intSelectButton)
-            answer = radioButton.text as String?
-           // Toast.makeText(baseContext, radioButton.text, Toast.LENGTH_SHORT).show()
+            try {
+                val intSelectButton: Int = radiogroup!!.checkedRadioButtonId
+                radioButton = findViewById(intSelectButton)
+                answer = radioButton.text as String?
+            } catch (e: Exception) {
+            }
+            // Toast.makeText(baseContext, radioButton.text, Toast.LENGTH_SHORT).show()
             if(answer.equals("")){
                 Toast.makeText(applicationContext,"Please select answer", Toast.LENGTH_SHORT).show()
             }else{
+
                 AnswerONE = answer.toString()
                 startActivity(Intent(this, Question2Activity::class.java))
             }
