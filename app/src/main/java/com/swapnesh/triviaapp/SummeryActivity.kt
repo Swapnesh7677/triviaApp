@@ -3,9 +3,11 @@ package com.swapnesh.triviaapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.swapnesh.triviaapp.Contants.USERNAME
 import kotlinx.android.synthetic.main.activity_summery.*
+import kotlinx.android.synthetic.main.booklayout.view.*
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
@@ -33,7 +35,13 @@ class SummeryActivity : AppCompatActivity() {
 
         namepersoon.text ="Hello "+USERNAME
         answerone.text = Contants.AnswerONE
-        answertwo.text =Contants.AnswerTwo
+
+        val output = Contants.AnswerTwo.replace("[", "")
+        Log.e("Adapter", "output--------" + output)
+        val outputnew = output.replace("]", "")
+        Log.e("", "outputnew--------" + outputnew)
+        answertwo.text = outputnew
+    
 
         datestring=  SimpleDateFormat("dd").format(cal.time)+"-"+ SimpleDateFormat("MM").format(cal.time)+"-"+yearccurrent
 

@@ -1,5 +1,6 @@
 package com.swapnesh.triviaapp
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +25,14 @@ class TriviaAdapter(
             datetime.text = "GAME : " + article.date+" "+article.time
             namepersoon.text = "NAME : " +article.name
             answerone.text = article.answerone
-            answertwo.text = article.answertwo
+
+            val output = article.answertwo.replace("[", "")
+            Log.e("Adapter", "output--------" + output)
+            val outputnew = output.replace("]", "")
+            Log.e("", "outputnew--------" + outputnew)
+            answertwo.text = outputnew
+
+
 
             setOnClickListener { listener(article) }
         }
