@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252422"
+    tools:context=".SummeryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Summery"
+            android:textColor="#f9c80e"
+            android:textSize="30sp"
+
+            android:fontFamily="@font/poppinsregular"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/namepersoon"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fffcf2"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fffcf2"
+            android:text="@string/Summerytest"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question1"
+            android:textColor="#fffcf2"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppinssemibold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/answerone"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f9c80e"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question2"
+            android:textColor="#fffcf2"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppinssemibold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/answertwo"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f9c80e"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/finish"
+                android:layout_marginTop="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="@string/Finish"
+                android:textColor="#f9c80e"
+                android:textSize="30sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_marginTop="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="@string/History"
+                android:textColor="#f9c80e"
+                android:textSize="30sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
